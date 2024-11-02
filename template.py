@@ -8,6 +8,7 @@ list_of_files = [
     '.github/workflows/.gitkeep',
     'experiment/experiment.ipynb',  # Corrected typo here
     'data/data.csv',
+    f'src/{project_name}/__init__.py',
     f'src/{project_name}/component/__init__.py',
     f'src/{project_name}/pipeline/__init__.py',  # Corrected typo in 'pipeline'
     f'src/{project_name}/logging/__init__.py',
