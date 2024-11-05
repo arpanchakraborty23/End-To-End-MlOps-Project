@@ -2,7 +2,12 @@ artifacts_root: artifacts
 
 Data_Ingestion:
   dir: artifacts/data_ingestion
-  url: https://github.com/arpanchakraborty23/data/raw/refs/heads/main/world_bank_dataset.zip
+  url: https://github.com/arpanchakraborty23/data/raw/refs/heads/main/us-visa.zip
   local_dir: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion/data
+
+Data_Validation:
+  dir: artifacts/data_validation
+  unzip_dir: artifacts\data_ingestion\data\EasyVisa.csv
+  status:  artifacts/data_validation/status.txt
 
