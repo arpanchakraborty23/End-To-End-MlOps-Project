@@ -17,3 +17,9 @@ Data_Transformation:
   train_arr: artifacts/data_transformation/train_arr.npy
   test_arr: artifacts/data_transformation/test_arr.npy
   preprocess_obj: artifacts/data_transformation/preprocess.pkl
+
+Model_Trainer:
+  dir: artifacts/model_Trainer
+  train_arr: artifacts/data_transformation/train_arr.npy
+  test_arr: artifacts/data_transformation/test_arr.npy
+  model: artifacts/model_Trainer/model.pkl

@@ -2,6 +2,7 @@ from src.ds import logging
 from src.ds.pipeline.Data_Ingestion_Pipline import DataIngestionTrainPipline
 from src.ds.pipeline.Data_Validation_Pipline import DataValidationTrainPipline
 from src.ds.pipeline.Data_Transformation_Pipline import DataTransformationTrainPipline
+from src.ds.pipeline.Model_Trainer_Pipline import ModelTrainPipline
 
 logging.info('Welcome to Data Science Project')
 
@@ -29,3 +30,11 @@ transform_obj=DataTransformationTrainPipline()
 transform_obj.TransformationPipline()
 
 logging.info('************************* Data Transformation Completed **************************')
+
+# Model train
+logging.info('************************* Model Trainer **************************')
+
+model_obj=ModelTrainPipline()
+model_obj.ModelPipline()
+
+logging.info('************************* Model Trainer Completed **************************')
