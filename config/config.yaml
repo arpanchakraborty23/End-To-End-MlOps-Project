@@ -2,12 +2,18 @@ artifacts_root: artifacts
 
 Data_Ingestion:
   dir: artifacts/data_ingestion
-  url: https://github.com/arpanchakraborty23/data/raw/refs/heads/main/us-visa.zip
+  url: https://github.com/arpanchakraborty23/data/raw/refs/heads/main/Job_Placement_Data.zip
   local_dir: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion/data
 
 Data_Validation:
   dir: artifacts/data_validation
-  unzip_dir: artifacts\data_ingestion\data\EasyVisa.csv
+  unzip_dir: artifacts\data_ingestion\data\Job_Placement_Data.csv
   status:  artifacts/data_validation/status.txt
 
+Data_Transformation:
+  dir: artifacts/data_transformation
+  unzip_dir: artifacts\data_ingestion\data\Job_Placement_Data.csv
+  train_arr: artifacts/data_transformation/train_arr.npy
+  test_arr: artifacts/data_transformation/test_arr.npy
+  preprocess_obj: artifacts/data_transformation/preprocess.pkl

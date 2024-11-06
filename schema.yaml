@@ -1,18 +1,20 @@
 COLUMNNS:
-  case_id                :  object
-  continent              :  object 
-  education_of_employee  :  object 
-  has_job_experience     :  object 
-  requires_job_training  :  object 
-  no_of_employees        :  int64  
-  yr_of_estab            :  int64  
-  region_of_employment   :  object 
-  prevailing_wage        :  float64
-  unit_of_wage           :  object 
-  full_time_position     :  object 
-  case_status            :  object 
+  gender              :    object 
+  ssc_percentage      :    float64
+  ssc_board           :    object 
+  hsc_percentage      :    float64
+  hsc_board           :    object 
+  hsc_subject         :    object 
+  degree_percentage   :    float64
+  undergrad_degree    :    object 
+  work_experience     :    object 
+  emp_test_percentage :    float64
+  specialisation      :    object 
+  mba_percent         :    float64
+  status              :    object 
 
-TARGET_COLUMN: 
-  name: case_status
+TARGET_COLUMN:  status
+
+DROP_COLUMN:  UNNAMED :0
 
   
