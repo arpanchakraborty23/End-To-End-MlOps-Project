@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Form</title>
+    <link rel="stylesheet" href="path_to_your_css_file.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Please Fill the Information</h2>
+        <form action="/submit" method="post">
+
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+
+            <!-- SSC Percentage -->
+            <label for="ssc_percentage">SSC Percentage:</label>
+            <input type="number" step="0.01" name="ssc_percentage" id="ssc_percentage" placeholder="Enter SSC Percentage" required>
+
+            <!-- SSC Board -->
+            <label for="ssc_board">SSC Board:</label>
+            <select name="ssc_board" id="ssc_board" required>
+                <option value="Central">Central</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <!-- HSC Percentage -->
+            <label for="hsc_percentage">HSC Percentage:</label>
+            <input type="number" step="0.01" name="hsc_percentage" id="hsc_percentage" placeholder="Enter HSC Percentage" required>
+
+            <!-- HSC Board -->
+            <label for="hsc_board">HSC Board:</label>
+            <select name="hsc_board" id="hsc_board" required>
+                <option value="Central">Central</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <!-- HSC Subject -->
+            <label for="hsc_subject">HSC Subject:</label>
+            <select name="hsc_subject" id="hsc_subject" required>
+                <option value="Commerce">Commerce</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+            </select>
+
+            <!-- Degree Percentage -->
+            <label for="degree_percentage">Degree Percentage:</label>
+            <input type="number" step="0.01" name="degree_percentage" id="degree_percentage" placeholder="Enter Degree Percentage" required>
+
+            <!-- Undergrad Degree -->
+            <label for="undergrad_degree">Undergrad Degree:</label>
+            <select name="undergrad_degree" id="undergrad_degree" required>
+                <option value="Comm&Mgmt">Comm&Mgmt</option>
+                <option value="Sci&Tech">Sci&Tech</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <!-- Work Experience -->
+            <label for="work_experience">Work Experience:</label>
+            <select name="work_experience" id="work_experience" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <!-- E-Test Percentage -->
+            <label for="emp_test_percentage">Employment Test Percentage:</label>
+            <input type="number" step="0.01" name="emp_test_percentage" id="emp_test_percentage" placeholder="Enter E-Test Percentage" required>
+
+            <!-- Specialisation -->
+            <label for="specialisation">Specialisation:</label>
+            <select name="specialisation" id="specialisation" required>
+                <option value="Mkt&Fin">Marketing & Finance</option>
+                <option value="Mkt&HR">Marketing & HR</option>
+            </select>
+
+            <!-- MBA Percentage -->
+            <label for="mba_percent">MBA Percentage:</label>
+            <input type="number" step="0.01" name="mba_percent" id="mba_percent" placeholder="Enter MBA Percentage" required>
+
+            <!-- Status -->
+            
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
