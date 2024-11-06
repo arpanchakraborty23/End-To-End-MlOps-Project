@@ -34,3 +34,11 @@ class ModelTrainConfig:
    max_depth: int
    min_samples_split:int
    min_samples_leaf:int
+
+@dataclass
+class ModelEvalConfig:
+   dir: Path
+   test_arr:Path
+   all_params: str
+   model: Path
+   metrics: str

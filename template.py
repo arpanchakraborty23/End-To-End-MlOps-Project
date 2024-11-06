@@ -2,7 +2,7 @@ import logging
 import os
 from pathlib import Path
 
-project_name = 'ds'
+project_name = 'dsproject'
 
 list_of_files = [
     '.github/workflows/.gitkeep',

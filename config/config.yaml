@@ -23,3 +23,9 @@ Model_Trainer:
   train_arr: artifacts/data_transformation/train_arr.npy
   test_arr: artifacts/data_transformation/test_arr.npy
   model: artifacts/model_Trainer/model.pkl
+
+Model_Eval:
+  dir: artifacts/model_eval
+  test_arr: artifacts/data_transformation/test_arr.npy
+  model: artifacts/model_Trainer/model.pkl
+  metrics: artifacts/model_eval/score.json

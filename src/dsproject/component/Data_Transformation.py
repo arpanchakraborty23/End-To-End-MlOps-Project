@@ -69,7 +69,6 @@ class DataTransformation:
 
          x_train,x_test,y_train,y_test=train_test_split(x,y,train_size=0.26,random_state=50)
 
-         logging.info('y_train',y_train.head())
 
          preprocess_obj=self.get_preprocess_obj()
 

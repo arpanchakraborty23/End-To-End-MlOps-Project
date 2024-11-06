@@ -3,6 +3,7 @@ from src.dsproject.pipeline.Data_Ingestion_Pipline import DataIngestionTrainPipl
 from src.dsproject.pipeline.Data_Validation_Pipline import DataValidationTrainPipline
 from src.dsproject.pipeline.Data_Transformation_Pipline import DataTransformationTrainPipline
 from src.dsproject.pipeline.Model_Trainer_Pipline import ModelTrainPipline
+from src.dsproject.pipeline.Model_Eval_Pipline import ModelEvalTrainPipline
 
 logging.info('Welcome to Data Science Project')
 
@@ -38,3 +39,11 @@ model_obj=ModelTrainPipline()
 model_obj.ModelPipline()
 
 logging.info('************************* Model Trainer Completed **************************')
+
+# Model Eval
+logging.info('************************* Model Eval **************************')
+
+eval_obj=ModelEvalTrainPipline()
+eval_obj.EvalPipline()
+
+logging.info('************************* Model Eval Completed **************************')

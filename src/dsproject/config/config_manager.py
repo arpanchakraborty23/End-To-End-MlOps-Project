@@ -4,7 +4,7 @@ from src.dsproject import logging
 
 from src.dsproject.utils.utils import read_yaml,create_dir
 from src.dsproject.constants.yaml_path import *
-from src.dsproject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainConfig
+from src.dsproject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainConfig,ModelEvalConfig
 
 class ConfigManager:
     def __init__(self,config_file_path=Config_file_path,prams_file_path=Param_file_path,schema_file_path=Schema_file_path) -> None:
@@ -80,4 +80,24 @@ class ConfigManager:
          return model_train_config
       except Exception as e:
          logging.info(f'error in MODEL TRAIN config {str(e)}')
+         raise e
+      
+    def get_model_eval_config(self):
+        try:
+         config=self.config.Model_Eval
+         create_dir([config.dir])
+         schema=self.schema
+         params=self.params.RandomForestClassifier
+         model_eval_config=ModelEvalConfig(
+                  dir=config.dir,
+                  test_arr=config.test_arr,
+                  all_params=params,
+                  model=config.model,
+                  metrics=config.metrics
+               )
+         return model_eval_config
+
+         
+        except Exception as e:
+         logging.info(f'error in MODEL eval config {str(e)}')
          raise e
